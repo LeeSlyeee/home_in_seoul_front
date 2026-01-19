@@ -1,0 +1,88 @@
+.landing-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--bg-color);
+}
+
+.landing-card {
+    background: var(--white);
+    padding: 3rem;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm); /* Minimal shadow as per design */
+    text-align: center;
+    width: 100%;
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.icon-search {
+    margin-bottom: 0.5rem;
+}
+
+.landing-title {
+    font-size: 1.5rem; /* ~24px */
+    font-weight: 700;
+    color: var(--text-main);
+    line-height: 1.4;
+    white-space: pre-line;
+}
+
+.input-group {
+    width: 100%;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-main);
+    margin-bottom: 0.5rem;
+}
+
+.input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: #F1F3F5;
+    border-radius: var(--radius-md);
+    padding: 0 1rem;
+    height: 48px;
+}
+
+.input-wrapper input {
+    border: none;
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+    outline: none;
+    color: var(--text-main);
+}
+
+.input-wrapper .unit {
+    color: var(--text-main);
+    font-weight: 600;
+    margin-left: 0.5rem;
+    white-space: nowrap;
+}
+
+.btn-primary {
+    width: 100%;
+    height: 48px;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: var(--radius-md);
+    transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+    background-color: #0056D0;
+}

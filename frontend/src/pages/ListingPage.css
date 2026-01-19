@@ -1,0 +1,222 @@
+.listing-container {
+    background-color: var(--white);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.listing-header {
+    padding: 1rem 2rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.search-bar-fake {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-main);
+    cursor: pointer;
+}
+
+/* Tabs */
+.tabs-container {
+    display: flex;
+    padding: 0 2rem;
+    border-bottom: 1px solid var(--border-color);
+    background-color: var(--white);
+}
+
+.tab-btn {
+    padding: 1rem 2rem;
+    background: transparent;
+    border-bottom: 2px solid transparent;
+    color: var(--text-sub);
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+
+.tab-btn:hover {
+    color: var(--primary-color);
+}
+
+.tab-btn.active {
+    color: var(--primary-color);
+    border-bottom-color: var(--primary-color);
+}
+
+/* Content */
+.listing-content {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.filters-row {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    padding: 1rem 0;
+    background-color: var(--white); /* In case we need sticky */
+}
+
+.filter-group {
+    position: relative;
+}
+
+.dropdown {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 140px;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    background-color: var(--white);
+    color: var(--text-sub);
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: border-color 0.2s, color 0.2s;
+}
+
+.dropdown:hover, .dropdown.active {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.dropdown.highlight {
+    background-color: #E7F5FF;
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+/* District Dropdown Panel */
+.district-dropdown-content {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 0.5rem;
+    background: white;
+    box-shadow: var(--shadow-md);
+    border-radius: var(--radius-md);
+    padding: 1rem;
+    z-index: 100;
+    min-width: 400px;
+    border: 1px solid var(--border-color);
+}
+
+.district-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem;
+}
+
+.checkbox-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.4rem;
+    font-size: 0.9rem;
+    color: var(--text-main);
+    cursor: pointer;
+    border-radius: var(--radius-sm);
+}
+
+.checkbox-item:hover {
+    background-color: #f8f9fa;
+}
+
+.checkbox-item input[type="checkbox"] {
+    cursor: pointer;
+}
+
+
+.stats-row {
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    color: var(--text-main);
+}
+
+.stats-row strong {
+    color: var(--primary-color);
+}
+
+/* Table */
+.table-container {
+    border-top: 1px solid var(--border-color);
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.data-table th {
+    background-color: var(--bg-color); /* Light gray header */
+    color: var(--text-main);
+    font-weight: 600;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+.data-table td {
+    padding: 1rem;
+    border-bottom: 1px solid var(--border-color);
+    color: var(--text-main);
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background-color 0.1s;
+}
+
+.data-table tbody tr:hover {
+    background-color: #F8F9FA;
+}
+
+/* FAB */
+.fab-up {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 48px;
+    height: 48px;
+    background-color: var(--white);
+    border-radius: 50%;
+    box-shadow: var(--shadow-md);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid var(--border-color);
+    color: var(--text-sub);
+    transition: 0.2s;
+}
+
+
+.dropdown-footer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.btn-confirm {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: var(--radius-sm);
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-confirm:hover {
+    background-color: #0056D0;
+}
