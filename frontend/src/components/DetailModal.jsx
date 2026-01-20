@@ -19,7 +19,10 @@ const DetailModal = ({ item, onClose }) => {
     <div className="modal-overlay" onClick={onClose}>
       <div className="modal-content" onClick={e => e.stopPropagation()}>
          <div className="modal-header">
-             <h2>{item.district} {item.neighborhood}</h2>
+             <div>
+                <h2>{item.district} {item.neighborhood}</h2>
+                {item.formattedPrice && <span style={{fontSize: '1rem', color: '#555', fontWeight: '500'}}>평균 시세: {item.formattedPrice}</span>}
+             </div>
              <button className="close-btn" onClick={onClose}>
                 <X size={24} color="#333" />
              </button>
